@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.box {
+				width: 500px;
+				height: 300px;
+				margin: 100px auto;
+				/*border: 1px solid ;*/
+				box-shadow: 0px 0px 20px 2px #333;
+				background-color: #333;
+				border-radius: 10px;
+			}
+			
+			.left {
+				width: 350px;
+				height: 300px;
+				float: left;
+			}
+			
+			#bck {
+				width: 350px;
+				height: 115px;
+				background-color: #000;
+				position: relative;
+			}
+			
+			#bck img {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				padding: 24px 10px;
+			}
+			
+			.tu {
+				width: 95px;
+				height: 115px;
+				float: left;
+				text-align: center;
+			}
+			
+			.chose {
+				width: 50px;
+				height: 115px;
+				float: left;
+				font-size: 12px;
+				text-align: center;
+				padding: 35px 20px;
+				box-sizing: border-box;
+			}
+			
+			.chose span {
+				color: #666;
+				display: block;
+				height: 16px;
+				text-align: center;
+			}
+			
+			.chose span:hover {
+				color: #fff;
+			}
+			
+			.sing {
+				width: 200px;
+				height: 113px;
+				border: 1px solid #000;
+				float: left;
+			}
+			
+			.sing p {
+				width: 200px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #666;
+			}
+			
+			.zi1 {
+				margin-top: 20px;
+				font-size: 20px;
+			}
+			
+			.zi2 {
+				font-size: 12px;
+			}
+			
+			#bck .buttom {
+				width: 350px;
+				height: 4px;
+				/*background-color: #fff;*/
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				cursor: pointer;
+			}
+			
+			#bck .buttom .b1 {
+				width: 200px;
+				height: 4px;
+				background-color: greenyellow;
+				/*display: none;*/
+			}
+			
+			#date {
+				width: 350px;
+				height: 80px;
+				line-height: 80px;
+				font-size: 40px;
+				clear: both;
+				text-align: center;
+				color: #666;
+			}
+			
+			#ico {
+				width: 350px;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			#ico .ico1 {
+				width: 310px;
+				height: 50px;
+				line-height: 50px;
+				margin: 0 auto;
+			}
+			
+			#ico span {
+				font-size: 25px;
+				display: block;
+				float: left;
+				color: #666;
+				line-height: 50px;
+				width: 103px;
+				text-align: center;
+			}
+			
+			#ico span:hover {
+				color: #fff;
+			}
+			
+			#volume {
+				width: 350px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			#volume .v1 {
+				width: 300px;
+				height: 30px;
+				margin-left: 50px;
+			}
+			
+			#volume span {
+				font-size: 12px;
+				display: block;
+				float: left;
+				color: #666;
+				height: 30px;
+				line-height: 30px;
+				width: 25px;
+				text-align: center;
+			}
+			
+			#volume span:hover {
+				color: #fff;
+			}
+			
+			#volume .tiao {
+				margin-top: 15px;
+				width: 210px;
+				height: 2px;
+				float: left;
+				background-color: #fff;
+				cursor: pointer;
+			}
+			
+			#volume .tiao1 {
+				width: 50px;
+				height: 2px;
+				background-color: green;
+			}
+			
+			.right {
+				width: 150px;
+				height: 305px;
+				float: left;
+			}
+			
+			.right ul {
+				width: 150px;
+				height: 305px;
+				padding: 20px 0px;
+				box-sizing: border-box;
+				list-style: none;
+			}
+			
+			.right ul li {
+				width: 150px;
+				height: 25px;
+				font-size: 12px;
+				line-height: 25px;
+				cursor: pointer;
+				color: #fff;
+			}
+			
+			.right ul li:hover {
+				background-color: #666;
+			}
+			
+			.right ul li span {
+				width: 100px;
+				height: 25px;
+				font-size: 12px;
+				line-height: 30px;
+				color: #fff;
+				float: left;
+				margin-left: 10px;
+				text-align: left;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			
+			.right ul li p {
+				width: 30px;
+				height: 25px;
+				font-size: 12px;
+				line-height: 25px;
+				color: #fff;
+				float: left;
+			}
+			
+			audio {
+				display: none;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="fontAwesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="font_f0sqe7be07bep14i/iconfont.css" />
+	</head>
+
+	<body>
+		<audio src="audio/亲爱的.mp3" loop="loop" controls="controls"></audio>
+		<div class="box">
+			<div class="left">
+				<div id="bck">
+					<div class="tu">
+						<img src="img/01.gif" />
+					</div>
+					<div class="sing">
+						<p class="zi1">动物世界</p>
+						<p class="zi2">薛之谦</p>
+					</div>
+					<div class="chose">
+						<span id="ran" class="fa fa-random"></span>
+
+						<span id="ls" class="fa fa-list"></span>
+						<span id="ht" class="fa fa-heart"></span>
+					</div>
+
+					<div class="buttom">
+						<div class="b1"></div>
+					</div>
+
+				</div>
+				<div id="date">00:00</div>
+				<div id="ico">
+					<div class="ico1">
+						<span id="p1" class="fa fa-backward"></span>
+						<span id="p2" class="fa fa-play"></span>
+						<span id="p3" class="fa fa-forward"></span>
+					</div>
+				</div>
+				<div id="volume">
+					<div class="v1">
+						<span id="off" class="fa fa-volume-off"></span>
+						<div class="tiao">
+							<div class="tiao1"></div>
+						</div>
+						<span id="up" class="fa fa-volume-up"></span>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<ul>
+					<!--<li><span>十年</span><p>00:00</p></li>
+					<li><span>动物世界</span><p>00:00</p></li>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js.js"></script>
+
+</html>
