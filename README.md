@@ -1,4 +1,5 @@
 H5音频播放器详情
+项目 地址：https://gjxings.github.io/h5audio/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/audio.html
 此demo没有借助框架，插件。基于H5和原生JS开发。
 由于早期写的h5视频播放器，代码规范不是特别严格，显得有点low，后期请关注00思想版本的demo 
 动态加载播放列表
